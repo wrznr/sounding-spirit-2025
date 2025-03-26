@@ -84,7 +84,7 @@ count: false
 .fifty[
 ]
 .fourty[
-<p style="margin-top:-0px">
+<p style="margin-top:-20px">
 <img src="img/grenzboten_raw.svg" />
 </p>
 ]
@@ -101,7 +101,7 @@ count: false
 - Image preprocessing
 ]
 .fourty[
-<p style="margin-top:-0px">
+<p style="margin-top:-20px">
 <img src="img/grenzboten_raw.svg" />
 </p>
 ]
@@ -118,7 +118,7 @@ count: false
 - Image preprocessing
 ]
 .fourty[
-<p style="margin-top:-0px">
+<p style="margin-top:-20px">
 <img src="img/grenzboten_opt.svg" />
 </p>
 ]
@@ -136,7 +136,7 @@ count: false
 - Layout analysis
 ]
 .fourty[
-<p style="margin-top:-0px">
+<p style="margin-top:-20px">
 <img src="img/grenzboten_opt.svg" />
 </p>
 ]
@@ -154,7 +154,7 @@ count: false
 - Layout analysis
 ]
 .fourty[
-<p style="margin-top:-0px">
+<p style="margin-top:-20px">
 <img src="img/grenzboten_struct.svg" />
 </p>
 ]
@@ -175,7 +175,7 @@ count: false
         + Headings
 ]
 .fourty[
-<p style="margin-top:-0px">
+<p style="margin-top:-20px">
 <img src="img/grenzboten_struct.svg" />
 </p>
 ]
@@ -201,7 +201,7 @@ count: false
         + Marginal notes etc.
 ]
 .fourty[
-<p style="margin-top:-0px">
+<p style="margin-top:-20px">
 <img src="img/grenzboten_struct.svg" />
 </p>
 ]
@@ -230,7 +230,7 @@ count: false
         + Tables etc.
 ]
 .fourty[
-<p style="margin-top:-0px">
+<p style="margin-top:-20px">
 <img src="img/grenzboten_struct.svg" />
 </p>
 ]
@@ -260,7 +260,7 @@ count: false
 - Text recognition
 ]
 .fourty[
-<p style="margin-top:-0px">
+<p style="margin-top:-20px">
 <img src="img/grenzboten_text.svg" />
 </p>
 ]
@@ -340,6 +340,43 @@ count: false
     + More robust against variation caused by artifacts compared to character-based approaches
 - **Tools:** `Tesseract (from version 4)`, `OCRopus`, `kraken`, `Calamari`
     + Uses **neural networks** for sequence classification
+
+---
+
+# Application to Text Recognition
+
+- Sequencing via Vectorization
+    + **Scaling** to a uniform height
+    + **Segmentation** into 1-pixel-wide strips
+
+<center>
+<img src="img/nbg_lines.png" width="400px" />
+</center>
+<center>
+<p>↓</p>
+</center>
+<center>
+<img src="img/nbg_grid.png" width="400px" />
+</center>
+
+---
+
+# Application to Text Recognition
+
+- Table with a fixed number of rows and a variable number of columns
+- Black (1) and white (0) pixels
+    + **Finite number** of possible configurations
+- Characteristic sequence per character (and word)
+
+<center>
+<img src="img/detail_mask.png" width="190px" />
+</center>
+<center>
+<p>↓</p>
+</center>
+<center>
+<img src="img/pixel_cols.png" width="190px" />
+</center>
 
 ---
 
