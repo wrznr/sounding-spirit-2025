@@ -84,7 +84,7 @@ count: false
 .fifty[
 ]
 .fourty[
-<p style="margin-top:-80px">
+<p style="margin-top:-0px">
 <img src="img/grenzboten_raw.svg" />
 </p>
 ]
@@ -101,7 +101,7 @@ count: false
 - Image preprocessing
 ]
 .fourty[
-<p style="margin-top:-80px">
+<p style="margin-top:-0px">
 <img src="img/grenzboten_raw.svg" />
 </p>
 ]
@@ -118,7 +118,7 @@ count: false
 - Image preprocessing
 ]
 .fourty[
-<p style="margin-top:-80px">
+<p style="margin-top:-0px">
 <img src="img/grenzboten_opt.svg" />
 </p>
 ]
@@ -136,7 +136,7 @@ count: false
 - Layout analysis
 ]
 .fourty[
-<p style="margin-top:-80px">
+<p style="margin-top:-0px">
 <img src="img/grenzboten_opt.svg" />
 </p>
 ]
@@ -154,7 +154,7 @@ count: false
 - Layout analysis
 ]
 .fourty[
-<p style="margin-top:-80px">
+<p style="margin-top:-0px">
 <img src="img/grenzboten_struct.svg" />
 </p>
 ]
@@ -175,7 +175,7 @@ count: false
         + Headings
 ]
 .fourty[
-<p style="margin-top:-80px">
+<p style="margin-top:-0px">
 <img src="img/grenzboten_struct.svg" />
 </p>
 ]
@@ -201,7 +201,7 @@ count: false
         + Marginal notes etc.
 ]
 .fourty[
-<p style="margin-top:-80px">
+<p style="margin-top:-0px">
 <img src="img/grenzboten_struct.svg" />
 </p>
 ]
@@ -230,7 +230,7 @@ count: false
         + Tables etc.
 ]
 .fourty[
-<p style="margin-top:-80px">
+<p style="margin-top:-0px">
 <img src="img/grenzboten_struct.svg" />
 </p>
 ]
@@ -260,7 +260,7 @@ count: false
 - Text recognition
 ]
 .fourty[
-<p style="margin-top:-80px">
+<p style="margin-top:-0px">
 <img src="img/grenzboten_text.svg" />
 </p>
 ]
@@ -268,13 +268,10 @@ count: false
 
 ---
 
-**Excursus: Sequence Classification**
+# Excursus: Sequence Classification
 
 - A central method in machine learning (cf. e.g., [Xing et al. 2010](https://www.cs.sfu.ca/~jpei/publications/Sequence%20Classification.pdf))  
-- Based on **Bayes' theorem**:  
-  \[
-  P(C|E) = \frac{P(E|C) \cdot P(C)}{P(E)}
-  \]
+- Based on **Bayes' theorem**: `\(P(C|E) = \frac{P(E|C)\cdot P(C)}{P(E)}\)`
 - **Recipe:**  
   1. Take  
      - a **very large** list of **manually annotated** data, and  
@@ -288,7 +285,7 @@ count: false
 
 ---
 
-**Excursus: Sequence Classification**
+# Excursus: Sequence Classification
 
 - **Illustration using Hyphenation as a Simple Example**
     + **Data Source**:
@@ -296,10 +293,10 @@ count: false
         * Hyphenation information for a large number of English words
         * Example: `electricity ↦ elec·tric·i·ty`
     + **Encoding Function** `\(f: \Sigma\rightarrow\mathbb{B}\)`
-      \[
+      $$
       f(x) = \begin{cases} 1 & x\,\text{followed by a hyphenation point} \\
       0 & \text{otherwise} \end{cases}
-      \]
+      $$
       ```
       e l e c t r i c i t y
       0 0 0 1 0 0 1 0 1 0
@@ -311,7 +308,7 @@ count: false
 
 ---
 
-## **Excursus: Sequence Classification Applications**
+# Excursus: Sequence Classification
 
 - A **simple yet effective** algorithm used in various fields:
     + **Natural Language Processing (NLP)**, e.g.,
@@ -339,10 +336,10 @@ count: false
 <center><img src="img/grid.svg" width="800px"/></center>
 
 - Context-sensitive recognition using *transition probabilities* of vectors
-- Requires segmentation of the page into *lines*
-- More robust against variation caused by artifacts compared to character-based approaches
+    + Requires segmentation of the page into *lines*
+    + More robust against variation caused by artifacts compared to character-based approaches
 - **Tools:** `Tesseract (from version 4)`, `OCRopus`, `kraken`, `Calamari`
-  + Uses **neural networks** for sequence classification
+    + Uses **neural networks** for sequence classification
 
 ---
 
