@@ -294,7 +294,7 @@ count: false
         * Example: `electricity ↦ elec·tric·i·ty`
     + **Encoding Function** `\(f: \Sigma\rightarrow\mathbb{B}\)`
       $$
-      f(x) = \begin{cases} 1 & x\,\text{followed by a hyphenation point} \\
+      f(x) = \begin{cases} 1 & x\,\text{followed by a hyphenation point} \\\\
       0 & \text{otherwise} \end{cases}
       $$
       ```
@@ -339,7 +339,6 @@ count: false
     + Requires segmentation of the page into *lines*
     + More robust against variation caused by artifacts compared to character-based approaches
 - **Tools:** `Tesseract (from version 4)`, `OCRopus`, `kraken`, `Calamari`
-    + Uses **neural networks** for sequence classification
 
 ---
 
@@ -368,15 +367,23 @@ count: false
     + **Finite number** of possible configurations
 - Characteristic sequence per character (and word)
 
+.cols[
+.fourty[
 <center>
 <img src="img/detail_mask.png" width="190px" />
 </center>
+]
+.ten[
 <center>
-<p>↓</p>
+→
 </center>
+]
+.fourty[
 <center>
 <img src="img/pixel_cols.png" width="190px" />
 </center>
+]
+]
 
 ---
 

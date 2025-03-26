@@ -157,3 +157,7 @@ ul > li > ol > li > ul > li { font-size:1.1rem }
 .twenty{
   flex: 20%;
 }
+
+.ten{
+  flex: 10%;
+}
