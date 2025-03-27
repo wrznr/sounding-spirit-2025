@@ -402,12 +402,12 @@ count: false
         * Representing the results as an OCR model
 
 .cols[
-.fifty[
+.fourty[
 <center>
 <img src="img/hi.png" style="width:150px" />
 </center>
 ]
-.thirty[
+.twenty[
 <pre style="font-size:1rem; font-family:monospace">
   0123456789
 0 1100001100
@@ -421,6 +421,173 @@ count: false
 ]
 ]
 
+---
+
+# Application to Layout Analysis
+
+.cols[
+.fifty[
+]
+.fourty[
+<p style="margin-top:-30px">
+<img src="img/unzonned.jpg" height="500px" />
+</p>
+]
+]
+
+---
+
+count: false
+
+# Application to Layout Analysis
+
+.cols[
+.fifty[
+- Training is performed on manually structured pages
+- Every pixel belongs to a **segment**
+- Every pixel is assigned to a **class**
+]
+.fourty[
+<p style="margin-top:-30px">
+<img src="img/unzonned.jpg" height="500px" />
+</p>
+]
+]
+
+---
+
+count: false
+
+# Application to Layout Analysis
+
+.cols[
+.fifty[
+- Training is performed on manually structured pages
+- Every pixel belongs to a **segment**
+- Every pixel is assigned to a **class**
+]
+.fourty[
+<p style="margin-top:-30px">
+<img src="img/zonned.png" height="500px" />
+</p>
+]
+]
+
+---
+
+count: false
+
+# Application to Layout Analysis
+
+.cols[
+.fifty[
+- Training is performed on manually structured pages
+- Every pixel belongs to a **segment**
+- Every pixel is assigned to a **class**
+  + Illustrated using color-coded segment types
+]
+.fourty[
+<p style="margin-top:-30px">
+<img src="img/zonned.png" height="500px" />
+</p>
+]
+]
+
+---
+
+count: false
+
+# Application to Layout Analysis
+
+.cols[
+.fifty[
+- Training is performed on manually structured pages
+- Every pixel belongs to a **segment**
+- Every pixel is assigned to a **class**
+  + Illustrated using color-coded segment types
+]
+.fourty[
+<p style="margin-top:-30px">
+<img src="img/sem_sep.png" height="500px" />
+</p>
+]
+]
+
+---
+
+count: false
+
+# Application to Layout Analysis
+
+.cols[
+.fifty[
+- Training is performed on manually structured pages
+- Every pixel belongs to a **segment**
+- Every pixel is assigned to a **class**
+  + Illustrated using color-coded segment types
+- Pixels are classified based on their **surroundings** (e.g., color in the original image)
+]
+.fourty[
+<p style="margin-top:-30px">
+<img src="img/sem_sep.png" height="500px" />
+</p>
+]
+]
+
+---
+
+count: false
+
+# Application to Layout Analysis
+
+.cols[
+.fifty[
+- Training is performed on manually structured pages
+- Every pixel belongs to a **segment**
+- Every pixel is assigned to a **class**
+  + Illustrated using color-coded segment types
+- Pixels are classified based on their **surroundings** (e.g., color in the original image)
+  + Arbitrarily complex classification schemes possible
+      * e.g., Text vs. Non-text
+]
+.fourty[
+<p style="margin-top:-30px">
+<img src="img/sem_sep.png" height="500px" />
+</p>
+]
+]
+
+---
+
+count: false
+
+# Application to Layout Analysis
+
+.cols[
+.fifty[
+- Training is performed on manually structured pages
+- Every pixel belongs to a **segment**
+- Every pixel is assigned to a **class**
+  + Illustrated using color-coded segment types
+- Pixels are classified based on their **surroundings** (e.g., color in the original image)
+  + Arbitrarily complex classification schemes possible
+      * e.g., Text vs. Non-text
+]
+.fourty[
+<p style="margin-top:-30px">
+<img src="img/text_sep.png" height="500px" />
+</p>
+]
+]
+
+---
+
+# Application to Layout Analysis
+
+- Formally
+    + **Data Source:**  
+        * Structured document images with **pixel-wise ground truth annotations**  
+        * Labeling commonly visualized through **color segmentation masks**
 
 ---
 
