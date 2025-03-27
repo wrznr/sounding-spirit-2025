@@ -407,8 +407,8 @@ count: false
 <img src="img/hi.png" style="width:150px" />
 </center>
 ]
-.fifty[
-```
+.thirty[
+<code>
   0123456789
 0 1100001100
 1 1100001100
@@ -417,7 +417,7 @@ count: false
 4 1100001100
 5 1111111100
 6 1111111100
-```
+</code>
 ]
 ]
 
