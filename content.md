@@ -397,21 +397,26 @@ count: false
       f(x[n]) = \begin{cases} 1 & \text{Pixel in cell } (x,n) \text{ is black} \\\\
       0 & \text{otherwise} \end{cases}
       $$
-
-.cols[
-.fifty[
     + **Training Process:**
         * Counting sequences of vector–character-part pairs
         * Representing the results as an OCR model
+
+.cols[
+.fifty[
 <center>
 <img src="img/hi.png" style="width:150px" />
 </center>
 ]
 .fifty[
-```text
+```
   0123456789
-0 1111111111
-2 0000110000
+0 1100001100
+1 1100001100
+2 1100001100
+3 1100001100
+4 1100001100
+5 1111111100
+6 1111111100
 ```
 ]
 ]
