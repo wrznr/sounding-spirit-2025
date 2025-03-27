@@ -397,12 +397,12 @@ count: false
       f(x[n]) = \begin{cases} 1 & \text{Pixel in cell } (x,n) \text{ is black} \\\\
       0 & \text{otherwise} \end{cases}
       $$
-    + **Training Process:**
-        * Counting sequences of vector–character-part pairs
-        * Representing the results as an OCR model
 
 .cols[
 .fifty[
+    + **Training Process:**
+        * Counting sequences of vector–character-part pairs
+        * Representing the results as an OCR model
 <center>
 <img src="img/hi.png" style="width:150px" />
 </center>
