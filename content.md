@@ -391,8 +391,7 @@ count: false
 
 - Formally
     + **Data Source:**
-        * [HTR United](https://htr-united.github.io/)
-        * Manually transcribed lines of text
+        * Manually transcribed lines of text, e.g. [HTR United](https://htr-united.github.io/)
     + **Encoding Function:** `\(f: \mathbb{N}^{10}\rightarrow\mathbb{B}\)`  
       $$
       f(x[n]) = \begin{cases} 1 & \text{Pixel in cell } (x,n) \text{ is black} \\\\
@@ -405,16 +404,16 @@ count: false
 
 .cols[
 .fifty[
+<center>
+<img src="img/hi.png" style="width:150px" />
+</center>
+]
+.fifty[
 ```text
   0123456789
 0 1111111111
 2 0000110000
 ```
-]
-.fifty[
-<center>
-<img src="img/hi.png" style="width:150px" />
-</center>
 ]
 ]
 
