@@ -400,7 +400,6 @@ count: false
     + **Training Process:**
         * Counting sequences of vector–character-part pairs
         * Representing the results as an OCR model
-        * Tool: Tesseract – [tesstrain](https://github.com/tesseract-ocr/tesstrain)
 
 .cols[
 .fifty[
