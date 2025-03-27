@@ -5,12 +5,12 @@ layout: true
 <div class="my-footer">
   <table>
     <tr>
-      <td style="text-align:right">Sächsische Landesbibliothek – Staats- und Universitätsbibliothek</td>
+      <td style="text-align:right">Saxon State and University Library</td>
       <td>4th April 2025</td>
       <td style="text-align:right"><a href="https://www.slub-dresden.de/">www.slub-dresden.de</a></td>
     </tr>
     <tr>
-      <td style="text-align:right">Referat 4.3</td>
+      <td style="text-align:right">Research-related Services</td>
       <td />
     </tr>
   </table>
@@ -22,7 +22,7 @@ layout: true
       <td style="text-align:left"><b>Kay-Michael Würzner</b></td>
     </tr>
     <tr>
-      <td style="text-align:left">Referat 4.3</td>
+      <td style="text-align:left">Research-related Services</td>
     </tr>
     <tr>
       <td style="font-size:8pt"><b>4th April 2025</b></td>
@@ -375,7 +375,7 @@ count: false
 ]
 .ten[
 <center>
-→
+<b>→</b>
 </center>
 ]
 .fourty[
@@ -384,6 +384,40 @@ count: false
 </center>
 ]
 ]
+
+---
+
+# Application to Text Recognition
+
+- Formally
+    + **Data Source:**
+        * [HTR United](https://htr-united.github.io/)
+        * Manually transcribed lines of text
+    + **Encoding Function:** `\(f: \mathbb{N}^{10}\rightarrow\mathbb{B}\)`  
+      $$
+      f(x[n]) = \begin{cases} 1 & \text{Pixel in cell } (x,n) \text{ is black} \\\\
+      0 & \text{otherwise} \end{cases}
+      $$
+    + **Training Process:**
+        * Counting sequences of vector–character-part pairs
+        * Representing the results as an OCR model
+        * Tool: Tesseract – [tesstrain](https://github.com/tesseract-ocr/tesstrain)
+
+.cols[
+.fifty[
+```text
+  0123456789
+0 1111111111
+2 0000110000
+```
+]
+.fifty[
+<center>
+<img src="img/hi.png" style="width:150px" />
+</center>
+]
+]
+
 
 ---
 
