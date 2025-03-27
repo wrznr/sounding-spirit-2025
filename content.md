@@ -408,7 +408,7 @@ count: false
 </center>
 ]
 .thirty[
-<pre style="font-size:1rem">
+<pre style="font-size:1rem; font-family:monospace">
   0123456789
 0 1100001100
 1 1100001100
