@@ -589,7 +589,7 @@ count: false
         * Structured document images with **pixel-wise ground truth** annotations
     + **Encoding Function:** `\(f: (\mathbb{N},\mathbb{N})\rightarrow\mathbb{R}^d\)`
       $$
-      f(i,j) = x_{i,j} = \langle x^{(0)}_{i,j}, \dots, x^{(d)}_{i,j}\rangle
+      f(i,j) = x_{i,j}^d = \langle x^{0}_{i,j}\rangle
       $$
       with, e.g.:
         * `\( x^{(0)}_{i,j} \)` = grayscale intensity of pixel `\( (i,j) \)` (e.g., 128)  
