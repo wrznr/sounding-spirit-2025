@@ -392,7 +392,7 @@ count: false
 - Formally
     + **Data Source:**
         * Manually transcribed lines of text, e.g. [HTR United](https://htr-united.github.io/)
-    + **Encoding Function:** `\(f: \mathbb{N}^{10}\rightarrow\mathbb{B}\)`  
+    + **Encoding Function:** `\(f: \mathbb{N}^{10}\rightarrow\mathbb{B}^{10}\)`  
       $$
       f(x[n]) = \begin{cases} 1 & \text{Pixel in cell } (x,n) \text{ is black} \\\\
       0 & \text{otherwise} \end{cases}
@@ -587,7 +587,65 @@ count: false
 - Formally
     + **Data Source:**  
         * Structured document images with **pixel-wise ground truth annotations**  
-        * Labeling commonly visualized through **color segmentation masks**
+    + **Encoding Function:** `\(f: (\mathbb{N},\mathbb{N})\rightarrow\mathbb{R}^d\)`  
+      $$
+      f(i,j) = x_{i,j}^d =  [x^{(0)}_{i,j}, \ldots, x^{(d)}_{i,j}]
+      $$
+      with, e.g.:
+        * `\( x^{(0)}_{i,j} \)` = grayscale intensity of pixel `\( (i,j) \)` (e.g., 128)  
+        * `\( x^{(1)}_{i,j} \)` = Sobel edge magnitude at `\( (i,j) \)` (e.g., 0.76)  
+        * `\( x^{(2)}_{i,j} \)` = Local Binary Pattern (LBP) value (e.g., 01101000)
+    + **Training Process:**
+        * Use annotated pixel data to train a classifier (e.g., CNN, CRF, U-Net)
+        * The classifier learns to map **local features + context** to pixel class labels
+
+
+???
+- **Objective:** Assign a **class label** to each pixel in a document image  
+    + Examples: `TEXT`, `MARGIN`, `IMAGE`, `PAGE NUMBER`, etc.
+
+- **Data Source:**  
+    + Structured document images with **pixel-wise ground truth annotations**  
+    + Labeling commonly visualized through **color segmentation masks**
+
+- **Feature Representation:**  
+  Each pixel `\( x_{i,j} \)` is mapped to a **feature vector** that captures local and contextual information.
+
+- **Encoding Function:**  
+  Let the input be a document image represented as a matrix of pixels with dimensions `\( H \times W \)` (height × width).
+  Define an **encoding function**:
+  \[
+  \phi: (i, j) \rightarrow \mathbb{R}^d
+  \]
+  where each pixel location `\( (i, j) \)` is mapped to a feature vector:
+  \[
+  \phi(i,j) = x_{i,j} = [x^{(0)}_{i,j}, x^{(1)}_{i,j}, x^{(2)}_{i,j}] 
+  \]
+  with:
+  - `\( x^{(0)}_{i,j} \)` = grayscale intensity of pixel `\( (i,j) \)` (e.g., 128)  
+  - `\( x^{(1)}_{i,j} \)` = Sobel edge magnitude at `\( (i,j) \)` (e.g., 0.76)  
+  - `\( x^{(2)}_{i,j} \)` = Local Binary Pattern (LBP) value (e.g., 01101000)
+
+  Example:
+  ```
+  x_{42,37} = [128, 0.76, 01101000]
+  ```
+
+- **Classification Function:**  
+  The goal is to learn a classifier:
+  \[
+  f: \mathbb{R}^{d} \rightarrow \mathcal{C}
+  \]
+  which assigns a layout class from the set `\( \mathcal{C} \)` to each feature vector `\( x_{i,j} \)`.
+
+- **Example Classes:**  
+  \[
+  \mathcal{C} = \{\texttt{TEXT}, \texttt{IMAGE}, \texttt{MARGIN}, \texttt{PAGE\_NUMBER}, \texttt{OTHER}\}
+  \]
+
+- **Training:**  
+    + Use annotated pixel data to train a classifier (e.g., CNN, CRF, U-Net)
+    + The classifier learns to map **local features + context** to pixel class labels
 
 ---
 
