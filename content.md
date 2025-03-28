@@ -589,7 +589,7 @@ count: false
         * Structured document images with **pixel-wise ground truth annotations**  
     + **Encoding Function:** `\(f: (\mathbb{N},\mathbb{N})\rightarrow\mathbb{R}^d\)`  
       $$
-      f(i,j) = x_{i,j}^d =  [x^{(0)}_{i,j}, \ldots, x^{(d)}_{i,j}]\\\\
+      f(i,j)
       $$
 
       with, e.g.:
@@ -602,6 +602,7 @@ count: false
 
 
 ???
+      f(i,j) = x_{i,j}^d =  [x^{(0)}_{i,j}, \ldots, x^{(d)}_{i,j}]\\\\
 - **Objective:** Assign a **class label** to each pixel in a document image  
     + Examples: `TEXT`, `MARGIN`, `IMAGE`, `PAGE NUMBER`, etc.
 
