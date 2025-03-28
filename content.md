@@ -593,8 +593,8 @@ count: false
       $$
       with, e.g.:
         * `\( x^{(0)}_{i,j} \)` = grayscale intensity of pixel `\( (i,j) \)` (e.g., 128)  
-        * `\( x^{(1)}_{i,j} \)` = Sobel edge magnitude at `\( (i,j) \)` (e.g., 0.76)  
-        * `\( x^{(2)}_{i,j} \)` = Local Binary Pattern (LBP) value (e.g., 01101000)
+        * `\( x^{(1)}_{i,j} \)` = [Sobel edge](https://doi.org/10.1109/4.996) magnitude at `\( (i,j) \)` (e.g., 0.76)  
+        * `\( x^{(2)}_{i,j} \)` = [Local Binary Pattern](https://en.wikipedia.org/wiki/Local_binary_patterns) (LBP) value (e.g., 01101000)
     + **Training Process:**
         * Use annotated pixel data to train a classifier (e.g., CNN, CRF, U-Net)
         * The classifier learns to map **local features + context** to pixel class labels
