@@ -594,20 +594,15 @@ count: false
       with, e.g.:
         * `\( x^{(0)}_{i,j} \)` = grayscale intensity of pixel `\( (i,j) \)` (e.g., 128)  
         * `\( x^{(1)}_{i,j} \)` = [Sobel edge](https://doi.org/10.1109/4.996) magnitude at `\( (i,j) \)` (e.g., 0.76)  
-        * `\( x^{(2)}_{i,j} \)` = [Local Binary Pattern](https://en.wikipedia.org/wiki/Local_binary_patterns) (LBP) value (e.g., 01101000)
+        * `\( x^{(2)}_{i,j} \)` = [Local Binary Pattern](https://en.wikipedia.org/wiki/Local_binary_patterns) value (e.g., 01101000)
     + **Training Process:**
         * Use annotated pixel data to train a classifier (e.g., CNN, CRF, U-Net)
         * The classifier learns to map **local features + context** to pixel class labels
 
 
 ???
-      f(i,j) = x_{i,j}^d =  []\\\\
 - **Objective:** Assign a **class label** to each pixel in a document image  
     + Examples: `TEXT`, `MARGIN`, `IMAGE`, `PAGE NUMBER`, etc.
-
-- **Data Source:**  
-    + Structured document images with **pixel-wise ground truth annotations**  
-    + Labeling commonly visualized through **color segmentation masks**
 
 - **Feature Representation:**  
   Each pixel `\( x_{i,j} \)` is mapped to a **feature vector** that captures local and contextual information.
@@ -615,22 +610,7 @@ count: false
 - **Encoding Function:**  
   Let the input be a document image represented as a matrix of pixels with dimensions `\( H \times W \)` (height × width).
   Define an **encoding function**:
-  \[
-  \phi: (i, j) \rightarrow \mathbb{R}^d
-  \]
   where each pixel location `\( (i, j) \)` is mapped to a feature vector:
-  \[
-  \phi(i,j) = x_{i,j} = [x^{(0)}_{i,j}, x^{(1)}_{i,j}, x^{(2)}_{i,j}] 
-  \]
-  with:
-  - `\( x^{(0)}_{i,j} \)` = grayscale intensity of pixel `\( (i,j) \)` (e.g., 128)  
-  - `\( x^{(1)}_{i,j} \)` = Sobel edge magnitude at `\( (i,j) \)` (e.g., 0.76)  
-  - `\( x^{(2)}_{i,j} \)` = Local Binary Pattern (LBP) value (e.g., 01101000)
-
-  Example:
-  ```
-  x_{42,37} = [128, 0.76, 01101000]
-  ```
 
 - **Classification Function:**  
   The goal is to learn a classifier:
@@ -639,21 +619,33 @@ count: false
   \]
   which assigns a layout class from the set `\( \mathcal{C} \)` to each feature vector `\( x_{i,j} \)`.
 
-- **Example Classes:**  
-  \[
-  \mathcal{C} = \{\texttt{TEXT}, \texttt{IMAGE}, \texttt{MARGIN}, \texttt{PAGE\_NUMBER}, \texttt{OTHER}\}
-  \]
-
-- **Training:**  
-    + Use annotated pixel data to train a classifier (e.g., CNN, CRF, U-Net)
-    + The classifier learns to map **local features + context** to pixel class labels
-
 ---
 
 class: part-slide
 count: false
 
 # Showcase OCR results
+
+---
+
+# OCR Workflow for Sounding Spirit
+
+.cols[
+.fifty[
+- Several tools for text and layout recognition available
+    + Each with specific pros and cons
+- Mix of musical notation and text challenging
+    + Lack of training materials
+    + Strong degree in variety
+    + Need to save paper
+- [Demo...](http://sdvocr.slub-dresden.de:8080/)
+]
+.fifty[
+]
+<p style="margin-top:-30px">
+<img src="img/OCR_tools.png" height="500px" />
+]
+
 
 ---
 
