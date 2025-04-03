@@ -631,7 +631,7 @@ count: false
 # OCR Workflow for Sounding Spirit
 
 .cols[
-.fifty[
+.sixty[
 - Several tools for text and layout recognition available
     + Each with specific pros and cons
 - Mix of musical notation and text challenging
@@ -640,10 +640,10 @@ count: false
     + Need to save paper
 - [Demo...](http://sdvocr.slub-dresden.de:8080/)
 ]
-.fifty[
+.fourty[
 ]
 <p style="margin-top:-30px">
-<img src="img/OCR_tools.png" height="500px" />
+<img src="img/OCR_tools.png" />
 ]
 
 
