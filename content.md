@@ -692,8 +692,31 @@ count: false
     + ChatGPT
     + Google Gemini
     + DeepSeek
-- Use the three representations – image, OCR text, ALTO XML – to design your own small experiment
+- Use the three representations of [the sample pages](https://drive.google.com/drive/folders/1TzdNrESnKv-X4VSxF_6ACKyCpg_-nCXK?usp=sharing) – image, OCR text, ALTO XML – to design your own small experiment
 - There are **no predefined goals** – you are free to test, explore, and innovate!
+
+---
+
+# Working with OCR texts
+
+🖼️ Image File
+
+- A scanned image of a historical document page.
+
+🧾 ALTO XML
+
+- Contains information about
+    + Text blocks and lines
+    + (Font sizes and styles)
+    + Coordinates for layout zones
+
+📄 Raw OCR Text
+
+- Extracted text as a plain string.
+    + May contain artifacts such as
+        * Incorrect characters or word splits
+        * Line break and hyphenation issues
+        * Layout-induced reading order problems
 
 ---
 
