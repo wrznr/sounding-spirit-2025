@@ -10,7 +10,7 @@ layout: true
       <td style="text-align:right"><a href="https://www.slub-dresden.de/">www.slub-dresden.de</a></td>
     </tr>
     <tr>
-      <td style="text-align:right">Research-related Services</td>
+      <td style="text-align:right">SLUB Research-related Services</td>
       <td />
     </tr>
   </table>
@@ -22,7 +22,7 @@ layout: true
       <td style="text-align:left"><b>Kay-Michael Würzner</b></td>
     </tr>
     <tr>
-      <td style="text-align:left">Research-related Services</td>
+      <td style="text-align:left">SLUB Research-related Services</td>
     </tr>
     <tr>
       <td style="font-size:8pt"><b>4th April 2025</b></td>
