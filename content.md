@@ -684,20 +684,16 @@ count: false
 
 # Working with OCR texts
 
-Objective
-
 - Experiment with using **Large Language Models** (LLMs) to assist in the postprocessing of OCR results.
     + Improve quality
     + Increase accessibility
     + Annotate relevant information
-- Choose a platform of your choice
+- Choose a platform of your choice, e.g.
     + ChatGPT
     + Google Gemini
     + DeepSeek
-    + ...
 - Use the three representations – image, OCR text, ALTO XML – to design your own small experiment
-
-There are **no predefined goals** – you are free to test, explore, and innovate!
+- There are **no predefined goals** – you are free to test, explore, and innovate!
 
 ---
 
