@@ -628,7 +628,7 @@ count: false
 
 ---
 
-# OCR Workflow for Sounding Spirit
+# Showcase OCR results
 
 .cols[
 .sixty[
@@ -641,11 +641,32 @@ count: false
 - [Demo...](http://sdvocr.slub-dresden.de:8080/)
 ]
 .fourty[
-]
-<p style="margin-top:-30px">
 <img src="img/OCR_tools.png" />
 ]
+]
 
+---
+
+# Showcase OCR results
+
+.cols[
+.sixty[
+- Lessons Learned
+    + No “one-does-it-all” tool available
+    + Clear focus on achievable goals important
+    + Amazon Textract clear winner in text localization task
+- Options for improvement
+    + Rerun OCR reusing existing line segmentation
+        * For selected volumes based on metadata
+    + Train model for music spotting
+        * But where to get training data?
+    + Post-processing OCR results
+        * **To what end?** 
+]
+.fourty[
+<img src="img/korrektur.png" />
+]
+]
 
 ---
 
