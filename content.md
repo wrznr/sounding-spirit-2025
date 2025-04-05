@@ -667,29 +667,6 @@ count: false
 # Showcase OCR results
 
 .cols[
-.fifty[
-<p style="margin-top:-30px">
-<img src="img/1878_lines.eyno.png" />
-</p>
-]
-.fifty[
-<p style="margin-top:-30px">
-<img src="img/1878_lines.png" />
-</p>
-]
-]
-
----
-
-# Showcase OCR results
-
-![diff](img/1875-Himnos-EMU-0040.diff.png)
-
----
-
-# Showcase OCR results
-
-.cols[
 .sixty[
 - Lessons Learned
     + No “one-does-it-all” tool available
