@@ -6,7 +6,7 @@ layout: true
   <table>
     <tr>
       <td style="text-align:right">Saxon State and University Library</td>
-      <td>4th April 2025</td>
+      <td>5th April 2025</td>
       <td style="text-align:right"><a href="https://www.slub-dresden.de/">www.slub-dresden.de</a></td>
     </tr>
     <tr>
@@ -25,7 +25,7 @@ layout: true
       <td style="text-align:left">SLUB Research-related Services</td>
     </tr>
     <tr>
-      <td style="font-size:8pt"><b>4th April 2025</b></td>
+      <td style="font-size:8pt"><b>5th April 2025</b></td>
     </tr>
     <tr>
       <td style="font-size:8pt">The Sounding Spirit Digital Library, Exhibition, and Convening</td>
