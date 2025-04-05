@@ -651,10 +651,14 @@ count: false
 
 .cols[
 .fifty[
+<p style="margin-top:-30px">
 <img src="img/1875_lines.eyno.png" />
+</p>
 ]
 .fifty[
+<p style="margin-top:-30px">
 <img src="img/1875_lines.png" />
+</p>
 ]
 ]
 
