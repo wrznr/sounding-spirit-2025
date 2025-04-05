@@ -644,6 +644,20 @@ count: false
 <img src="img/OCR_tools.png" />
 ]
 ]
+
+---
+
+# Showcase OCR results
+
+.cols[
+.fifty[
+<img src="img/1875_lines.eyno.png" />
+]
+.fifty[
+<img src="img/1875_lines.png" />
+]
+]
+
 ---
 
 # Showcase OCR results
