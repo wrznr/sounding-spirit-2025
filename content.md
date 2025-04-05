@@ -329,6 +329,12 @@ count: false
 
 # Application to Text Recognition
 
+![Seurat](https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Georges_Seurat_034.jpg/1280px-Georges_Seurat_034.jpg)
+
+---
+
+# Application to Text Recognition
+
 - Recognition is performed *line by line*
   1. **Scaling:** Standardizing height for all lines
   2. **Feature Extraction:** Creating a grid with a fixed number of **horizontal** lines and a variable number of **vertical** columns → representing lines as sequences of binary-valued vectors of fixed length
