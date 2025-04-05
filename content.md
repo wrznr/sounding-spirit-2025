@@ -656,23 +656,6 @@ count: false
 # Showcase OCR results
 
 .cols[
-.fifty[
-<p style="margin-top:-30px">
-<img src="img/1875_lines.eyno.png" />
-</p>
-]
-.fifty[
-<p style="margin-top:-30px">
-<img src="img/1875_lines.png" />
-</p>
-]
-]
-
----
-
-# Showcase OCR results
-
-.cols[
 .sixty[
 - Lessons Learned
     + No “one-does-it-all” tool available
