@@ -711,20 +711,12 @@ count: false
 
 # Working with OCR texts
 
-🖼️ Image File
-
-- A scanned image of a historical document page.
-
-🧾 ALTO XML
-
-- Contains information about
+- 🖼️ Image File: A scanned image of a historical document page.
+- 🧾 ALTO XML: Contains information about
     + Text blocks and lines
     + (Font sizes and styles)
     + Coordinates for layout zones
-
-📄 Raw OCR Text
-
-- Extracted text as a plain string.
+- 📄 Raw OCR Text: Extracted text as a plain string.
     + May contain artifacts such as
         * Incorrect characters or word splits
         * Line break and hyphenation issues
