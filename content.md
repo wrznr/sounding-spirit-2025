@@ -10,7 +10,7 @@ layout: true
       <td style="text-align:right"><a href="https://www.slub-dresden.de/">www.slub-dresden.de</a></td>
     </tr>
     <tr>
-      <td style="text-align:right">SLUB Research-related Services</td>
+      <td style="text-align:right">Research-related Services</td>
       <td />
     </tr>
   </table>
