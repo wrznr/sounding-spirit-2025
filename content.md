@@ -722,6 +722,8 @@ count: false
         * Line break and hyphenation issues
         * Layout-induced reading order problems
 
+Let us discuss your ideas!
+
 ---
 
 class: part-slide
